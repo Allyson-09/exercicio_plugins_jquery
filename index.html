@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>Formulário</title>
 </head>
 <body>
@@ -35,7 +36,7 @@
                     </div>
                     <div class="input-box">
                         <label for="birth">Data de Nascimento</label>
-                        <input id="birth" type="number" name="birth" placeholder="Digite sua data de nascimento" required>
+                        <input id="birth" type="number" name="birth" placeholder="__/__/____" required>
                     </div>
                     <div class="input-box">
                         <label for="telefone">Telefone</label>
@@ -51,7 +52,7 @@
                     </div>
                     <div class="input-box">
                         <label for="cep">CEP</label>
-                        <input id="cep" type="number" name="cep" placeholder="Digite seu CEP" required>
+                        <input id="cep" type="number" name="cep" placeholder="_____-___" required>
                     </div>
                 </div>
                 <div class="gender-inputs">
@@ -86,10 +87,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#telefone').mask('(00) 00000-0000');
-        });
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
     </script>
 </body>
 </html>
